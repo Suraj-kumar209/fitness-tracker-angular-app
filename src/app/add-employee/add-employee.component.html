@@ -1,0 +1,39 @@
+<!-- <form [formGroup]="employeeForm" (ngSubmit)="save()">
+<div class="form-control">
+    <label for="FirstName" style="margin-right: 30px;">FirstName</label>
+    <input class="form-control" id="FirstName" name="FirstName" formControlName="FirstName">
+</div>
+<div >
+    <label for="LastName" style="margin-right: 30px;">LastName</label>
+    <input class="form-control" id="LastName" name="LastName" formControlName="LastName">
+</div>
+<div class="form-group">
+    <label for="Email" style="margin-right: 55px;">Email</label>
+    <input id="Email" class="form-control" name="Email" formControlName="Email">
+</div>
+<div class="form-group">
+    <label for="Gender">Gender</label>
+    <input class="form-control" *ngFor="let val of genders" [value]="val" type="radio" id="Gender" name="Gender" formControlName="Gender">
+</div>
+<div class="form-group">
+    <label for="ContactNumber">Contact Number</label>
+    <input class="form-control" id="ContactNumber" name="ContactNumber" formControlName="ContactNumber">
+</div>
+<div class="form-group">
+    <label for="Department">Department</label>
+    <select class="form-control"  id="Department" formControlName="Department" (change)="selectDepartment($event)">
+        <option [value]="item" *ngFor="let item of departmentList;">{{item}}</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="ReportingTo">Reporting To</label>{{reportingToList|json}}
+    <select class="form-control" id="ReportingTo" [disabled]="isDepartment" formControlName="ReportingTo">
+        <option [value]="item.ReportingTo"  *ngFor="let item of reportingToList;">{{item.ReportingTo}}</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="Status">Active</label>
+    <input class="form-control" (click)="employeeStatus()" checked="isActive" type="checkbox" id="Status" name="Status" formControlName="Status">
+</div>
+<div><button type="submit">Save</button></div>
+</form> -->

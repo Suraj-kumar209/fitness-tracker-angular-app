@@ -1,0 +1,27 @@
+<section>
+    <!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center"> -->
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-layout">  
+        <mat-form-field hintLable="Should be at least 6 characters long.">
+            <input email required #emailInput="ngModel" type="email" matInput ngModel name="email" placeholder="your email"> 
+            <mat-error *ngIf="emailInput.invalid">Email is invaild.</mat-error>
+            <mat-error *ngIf="emailInput.touched && emailInput.hasError('reqiured')">Email is reqiured.</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <input required minlength="6" #pwInput="ngModel" type="password" matInput ngModel name="password" placeholder="your password"> 
+            <mat-hint align="end">{{pwInput}}/6</mat-hint>    
+        </mat-form-field>
+        <mat-form-field>
+            <input [max]="maxDate" ngModel name="Birthdate" [matDatepicker]="picker" placeholder="Your Birthdate" matInput>
+            <mat-datepicker-toggle mat-Suffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-checkbox ngModel name="agree" required labelPosition="before">Agree to Terms and conditions.</mat-checkbox>
+        <button type="submit" mat-raised-button color="primary">Submit</button>
+
+    </form>
+</section>
+<!-- <section id="container">
+    <div id="child1" class="child"></div>
+    <div id="child2" class="child"></div>
+    <div id="child3" class="child"></div>
+</section> -->

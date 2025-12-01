@@ -1,0 +1,32 @@
+#container{
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* main axis top to bottom or left to right*/
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.child{
+    /* width: 200px; */
+    height: 200px;
+    flex: 1;
+    /* background-color: red; */
+}
+#child1{
+    background-color: red;
+    flex: 2;
+}
+#child2{
+    background-color: yellow;
+}
+#child3{
+    background-color: green;
+}
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
