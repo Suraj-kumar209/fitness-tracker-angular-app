@@ -1,5 +1,5 @@
 <section>
-    <!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center"> -->
+    <!-- <form #f="ngForm" (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center"> as flexlayoutmodule deprecated-->
     <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="form-layout">  
         <mat-form-field hintLable="Should be at least 6 characters long.">
             <input email required #emailInput="ngModel" type="email" matInput ngModel name="email" placeholder="your email"> 
